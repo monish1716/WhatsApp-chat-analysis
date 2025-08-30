@@ -48,12 +48,17 @@ if uploaded_file is not None:
         #monthly timeline
         Timeline = helper.monthly_timeline(selected_user, df)
         st.title("Monthly Timeline")
-        fig, ax = plt.subplots()
-        ax.plot(Timeline['time'], Timeline['message_count'], color='green', marker='o')
-        plt.xticks(rotation=90)
-        ax.set_xlabel("Month")
-        ax.set_ylabel("Number of Messages")
-        st.pyplot(fig)
+        
+        if Timeline.empty:
+            st.write("No data available for monthly timeline.")
+        else:
+            fig, ax = plt.subplots()
+            ax.plot(Timeline['time'], Timeline['message_count'], color='green', marker='o')
+            plt.xticks(rotation=90)
+            ax.set_xlabel("Month")
+            ax.set_ylabel("Number of Messages")
+            st.pyplot(fig)
+
 
 
         #daily timeline
@@ -150,5 +155,6 @@ if uploaded_file is not None:
 
         
                 
+
 
 
