@@ -6,8 +6,8 @@
 
 ![Python](https://img.shields.io/badge/Language-Python-blue)
 ![ML](https://img.shields.io/badge/Domain-Machine_Learning-green)
-![Matplotlib](https://img.shields.io/badge/Library-Matplotli-yellow)
-![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)  
+![Matplotlib](https://img.shields.io/badge/Library-Matplotlib-yellow)
+![Seaborn](https://img.shields.io/badge/Library-Seaborn-orange)  
 An interactive WhatsApp Chat Analyzer built with Python and Streamlit that provides insights into your chats including message trends, user activity, emoji usage, and most common words.
 
 ---
