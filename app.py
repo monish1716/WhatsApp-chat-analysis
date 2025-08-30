@@ -10,11 +10,11 @@ if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
         try:
         data = bytes_data.decode("utf-8")   # default
-    except UnicodeDecodeError:
-        try:
-            data = bytes_data.decode("utf-16")   # iPhone exports
         except UnicodeDecodeError:
-            data = bytes_data.decode("utf-8-sig")  # fallback
+            try:
+                data = bytes_data.decode("utf-16")   # iPhone exports
+            except UnicodeDecodeError:
+                data = bytes_data.decode("utf-8-sig")  # fallback
 
     df = preprocessor.preprocess(data)
 
@@ -162,6 +162,7 @@ if uploaded_file is not None:
 
         
                 
+
 
 
 
