@@ -13,36 +13,33 @@ An interactive WhatsApp Chat Analyzer built with Python and Streamlit that provi
 ---
 
 ## 🚀 Features
-- 📊 Data preprocessing and cleaning of raw dataset.  
-- 🧮 Content-based filtering using **cosine similarity**.  
-- 🎥 Movie recommendations with titles and posters.  
-- 🌐 Interactive **Streamlit web app** for easy use.  
+- 📊 Chat Statistics – total messages, words, media, and links shared.
+- 🗓️ Timelines – monthly & daily message trends.
+- 🔥 Activity Maps – busiest days, months, and weekly heatmaps.
+- 🏆 User Analysis – most active users in group chats.
+- ☁️ WordCloud – visualize frequently used words.
+- 😀 Emoji Analysis – discover the most used emojis in your chats.
 
 ---
 
 ## 🛠️ Tech Stack
 - **Python**
-- **Pandas, NumPy**
-- **Scikit-learn**
+- **Pandas, Matplotlib, Seaborn**
+- **WordCloud**
 - **Streamlit**
-- **Pickle** (for saving the model)
+- **emoji, urlextract** (for emoji and url extraction)
 
 ---
 
 ## ⚙️ Installation & Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/monish1716/Movies-Recommend-System.git
-   cd Movies-Recommend-System
+   git clone https://github.com/monish1716/WhatsApp-chat-analysis.git
+   cd WhatsApp-chat-analysis
 
 2. Install dependencies:
 
 pip install -r requirements.txt
-
-3. Download similarity.pkl:
-   ```bash
-   pip install gdown
-   python download_similarity.py
    
 4. Run the Streamlit app:
 
@@ -50,22 +47,12 @@ streamlit run app.py
 
 ---
 
-## Dataset
-This project uses the TMDB 5000 Movies Dataset from Kaggle, which contains two files:
-1. `movies.csv` – movie details (title, genres, keywords, etc.)
-2. `credits.csv` – cast and crew information  
-
-Download them from [Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata) and place them in the `data/` folder.
-
----
-
 ## 🎯 How It Works
  
-1️⃣ Extract features (genres, cast, crew, keywords)  
-2️⃣ Preprocess data (clean, remove nulls/duplicates)  
-3️⃣ Convert text → vectors (CountVectorizer)  
-4️⃣ Compute **cosine similarity** between movies  
-5️⃣ Recommend **Top 5 similar movies** 🎥  
+1️⃣ Export a WhatsApp chat (without media).
+2️⃣ Upload the .txt file in the Streamlit app.
+3️⃣ Data is preprocessed (date, user, message separation).
+4️⃣ Generate insights: timelines, busiest users, wordcloud, emoji analysis, etc. 
 
 
 ---
@@ -73,22 +60,22 @@ Download them from [Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-meta
 ## 🌐 Demo
 
 After running the Streamlit app:
-Enter a movie title in the input box.
-Get top 5 recommended movies with posters.
+Upload you whatsApp chat file
+Get entire analysis of you whatsApp chat.
 
 ---
 
 ## 📌 Example  
-Here’s how the app looks in action:  
+Here’s how the app looks in action: 
 
-![Movie Recommender Screenshot](images/mrs.png)  
+![WhatsApp chat analysis Screenshot](images/mrs.png)  
 
 ---
 
 ## 🔮 Future Improvements  
-- [ ] Add hybrid recommendation system (content + collaborative)  
-- [ ] Deploy on HuggingFace Spaces / Render  
-- [ ] Integrate with real-time movie APIs  
+- [ ] Add sentiment analysis of messages. 
+- [ ] Improve stopwords for Hinglish slang 
+- [ ] Support multi-chat comparisons.  
 
 ---
 
