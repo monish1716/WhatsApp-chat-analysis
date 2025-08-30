@@ -11,7 +11,7 @@ A simple **Streamlit app** that analyzes your WhatsApp chat and gives insights l
 ---
 
 ## 🚀 Live Demo  
-👉 [Streamlit App]([your-deployment-link-here](https://monish-whatsapp-chat-analysis.streamlit.app))
+👉 [Streamlit App]((https://monish-whatsapp-chat-analysis.streamlit.app))
 
 ---
 
