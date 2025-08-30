@@ -46,6 +46,7 @@ def create_wordcloud(selected_user, df):
     temp = df[df['user'] != 'group_notification']
     # Remove deleted and media messages
     temp = df[(df['message'] != 'This message was deleted') & 
+            (df['message'] != 'message deleted') &
             (df['message'] != '<Media omitted>\n')]
 
 
@@ -76,6 +77,7 @@ def most_common_words(selected_user, df):
 
     temp = df[df['user'] != 'group_notification']
     temp = df[(df['message'] != 'This message was deleted') & 
+            (df['message'] != 'message deleted') &
             (df['message'] != '<Media omitted>\n')]
 
     words = []
@@ -143,3 +145,4 @@ def activity_heatmap(selected_user, df):
     heatmap = df.pivot_table(index='day_name', columns='period', values='message', aggfunc='count').fillna(0)
 
     return heatmap
+
