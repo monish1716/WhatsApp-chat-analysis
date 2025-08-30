@@ -1,5 +1,5 @@
 # 💬 WhatsApp Chat Analyzer (Python + Streamlit)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://monish-whatsapp-chat-analysis.streamlit.app)
+[![App](https://img.shields.io/badge/Streamlit-Demo-red?logo=streamlit)](https://monish-whatsapp-chat-analysis.streamlit.app)
 
 
 
