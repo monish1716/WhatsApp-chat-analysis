@@ -108,12 +108,11 @@ def monthly_timeline(selected_user, df):
     if selected_user != 'Overall':
         df = df[df['user'] == selected_user]
 
+    if df.empty or 'year' not in df.columns or 'month_num' not in df.columns:
+        return pd.DataFrame(columns=['time','message_count'])
+
     timeline = df.groupby(['year','month_num','month']).count()['message'].reset_index()
-
-    # Create a 'time' column
     timeline['time'] = timeline.apply(lambda row: row['month'] + "-" + str(row['year']), axis=1)
-
-    # Rename the message count column for clarity
     timeline.rename(columns={'message': 'message_count'}, inplace=True)
 
     return timeline
@@ -145,4 +144,5 @@ def activity_heatmap(selected_user, df):
     heatmap = df.pivot_table(index='day_name', columns='period', values='message', aggfunc='count').fillna(0)
 
     return heatmap
+
 
