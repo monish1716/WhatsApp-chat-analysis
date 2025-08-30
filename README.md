@@ -11,7 +11,7 @@ A simple **Streamlit app** that analyzes your WhatsApp chat and gives insights l
 ---
 
 ## 🚀 Live Demo  
-👉 [Streamlit App](your-deployment-link-here)
+👉 [Streamlit App]([your-deployment-link-here](https://monish-whatsapp-chat-analysis.streamlit.app))
 
 ---
 
@@ -30,3 +30,11 @@ A simple **Streamlit app** that analyzes your WhatsApp chat and gives insights l
 ├── helper.py # Helper functions (stats, plots)
 ├── stop_hinglish.txt # Custom stopwords list
 ├── requirements.txt # Dependencies
+
+📷 Screenshots
+
+(Add a few screenshots of your Streamlit dashboard here)
+
+✨ Author
+
+Made with ❤️ by Monish patil
