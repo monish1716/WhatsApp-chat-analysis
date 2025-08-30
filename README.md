@@ -2,9 +2,11 @@
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live_App-red?logo=streamlit)](https://monish-whatsapp-chat-analysis.streamlit.app)
 
 ![Python](https://img.shields.io/badge/Language-Python-blue)
-![ML](https://img.shields.io/badge/Domain-Machine_Learning-green)
-![Matplotlib](https://img.shields.io/badge/Library-Matplotlib-yellow)
-![Seaborn](https://img.shields.io/badge/Library-Seaborn-orange)  
+![Pandas](https://img.shields.io/badge/Library-Pandas-yellow)
+![Matplotlib](https://img.shields.io/badge/Library-Matplotlib-green)
+![Seaborn](https://img.shields.io/badge/Library-Seaborn-orange)
+![WordCloud](https://img.shields.io/badge/Library-WordCloud-lightgrey)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
 An interactive WhatsApp Chat Analyzer built with Python and Streamlit that provides insights into your chats including message trends, user activity, emoji usage, and most common words.
 
 ---
