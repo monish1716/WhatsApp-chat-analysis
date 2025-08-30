@@ -15,7 +15,8 @@ if uploaded_file is not None:
 
     # Fetch unique users
     user_list = df['user'].unique().tolist()
-    user_list.remove('group_notification')  # remove system messages
+    if 'group_notification' in user_list:
+        user_list.remove('group_notification')  # remove system messages
     user_list.sort()
     user_list.insert(0, "Overall")  # add option to analyze all users together
 
@@ -149,4 +150,5 @@ if uploaded_file is not None:
 
         
                 
+
 
