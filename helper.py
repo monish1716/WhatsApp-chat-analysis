@@ -99,7 +99,7 @@ def emoji_helper(selected_user, df):
     for message in df['message']:
         emojis.extend([c for c in message if c in emoji.EMOJI_DATA])
 
-    emoji_df = pd.DataFrame(Counter(emojis).most_common(20),  # top 20 emojis
+    emoji_df = pd.DataFrame(Counter(emojis).most_common(10),  # top 10 emojis
                             columns=['Emoji', 'Count'])
 
     return emoji_df
@@ -144,5 +144,6 @@ def activity_heatmap(selected_user, df):
     heatmap = df.pivot_table(index='day_name', columns='period', values='message', aggfunc='count').fillna(0)
 
     return heatmap
+
 
 
