@@ -67,7 +67,7 @@ Get entire analysis of you whatsApp chat.
 ## 📌 Example  
 Here’s how the app looks in action: 
 
-![WhatsApp chat analysis Screenshot](images/mrs.png)  
+![WhatsApp chat analysis Screenshot](images/whatsapp-chat-analysis-demo-png)  
 
 ---
 
